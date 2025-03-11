@@ -28,10 +28,12 @@ public class register {
         this.age=age;
     }
 
-    String generateUserId(){
+   private String generateUserId(){
         String ui = "";
         return ui;
     }
 
-    
+    private void storeDataInDataBase(){
+        //...
+    }
 }
