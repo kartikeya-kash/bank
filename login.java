@@ -20,14 +20,13 @@ public class login {
         
     }
 
-    boolean checkCredential(){
+    private void checkCredential(){
      if(this.id == "" && this.password == ""){
-        return true; //go to register page 
+         //go to register page 
      }   
      else{
-        return false; //give error
+         //give error
      }
     }
-
-    
+ 
 }
