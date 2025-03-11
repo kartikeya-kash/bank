@@ -1,3 +1,12 @@
+/* stucture of LOGIN
+ * 
+ *    input id and password
+ *    Login button
+ *    forgot password?
+ *    Register
+ * 
+ */
+
 public class login {
     private String id ;
     private String password;
@@ -7,12 +16,18 @@ public class login {
         this.password=password;
     }
 
+    private void getDataFromDataBase(){
+        
+    }
+
     boolean checkCredential(){
      if(this.id == "" && this.password == ""){
-        return true;
+        return true; //go to register page 
      }   
      else{
-        return false;
+        return false; //give error
      }
     }
+
+    
 }
