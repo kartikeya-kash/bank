@@ -10,3 +10,13 @@ create table user (
     phone bigint not null unique,
     address varchar(256) not null
 );
+
+create table account( --bank account
+    account_no varchar(50) not null primary key,
+    user_id varchar(20) not null, -- FK
+    bank varchar(20) not null,
+    balance int not null,
+    account_type varchar(20) not null,
+    foreign key (user_id) references user(user_id)
+);
+
