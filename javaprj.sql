@@ -20,3 +20,13 @@ create table account( --bank account
     foreign key (user_id) references user(user_id)
 );
 
+create table cards(
+    card_id varchar(20) primary key,
+    account_no varchar(50) not null ,
+    cvv int not null,
+    expiry date not null,
+    card_type varchar(20) not null,
+    card_no bigint not null unique,
+    foreign key (account_no) references account(account_no)
+);
+
