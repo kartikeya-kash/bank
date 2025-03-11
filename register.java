@@ -7,6 +7,8 @@
         email
         dob
         age
+        register  button -> login page for logging in the app
+        login? 
  */
 
 public class register {
